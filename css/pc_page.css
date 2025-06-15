@@ -1,0 +1,1106 @@
+canvas {
+    height: inherit !important;
+    width: inherit !important;
+}
+
+@keyframes zIndex {
+    0% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.2;
+    }
+}
+
+@keyframes scroll-bound {
+    0% {
+        transform: translate3d(0, 4%, 0);
+    }
+
+    to {
+        transform: translate3d(0, -4%, 0);
+    }
+}
+
+@keyframes bright-hue {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(35deg) brightness(1.08) contrast(1.08) drop-shadow(0 0 8px rgba(255, 255, 255, 0.26));
+    }
+
+    to {
+        filter: hue-rotate(0deg);
+    }
+}
+
+@keyframes title-bound {
+    0% {
+        transform: translate3d(0, min(-4px, -3%), 0);
+    }
+
+    to {
+        transform: translate3d(0, min(4px, 3%), 0);
+    }
+}
+
+@keyframes audioSpin {
+    0% {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes smokeRise {
+    0% {
+        opacity: 0.7;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(-50%, -150%) scale(1.5);
+    }
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0.4;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 0.4;
+    }
+}
+
+.fullpage-section {
+    box-sizing: border-box;
+    max-height: var(--maxvh);
+    position: relative;
+}
+
+.fullpage-section>.swiper-wrapper,
+.fullpage-section>.swiper-wrapper>.swiper-slide {
+    box-sizing: border-box;
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
+}
+
+.fullpage-section>.swiper-wrapper>.swiper-slide {
+    overflow: hidden;
+}
+
+@media (min-width: 1281px) {
+    .fullpage-section>.swiper-wrapper>.swiper-slide {
+        max-height: var(--maxvh);
+    }
+
+    .mobile-content {
+        display: none;
+    }
+}
+
+.fullpage-section>.swiper-wrapper>.swiper-slide.swiper-slide-active {
+    z-index: 2;
+}
+
+.nav-side {
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    line-height: 1;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-side ._wrap {
+    align-self: center;
+    margin-right: 12px;
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+    width: 100%;
+}
+
+.nav-side ._wrap ol {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+
+.nav-side ._wrap ol li {
+    cursor: pointer;
+    z-index: 2;
+}
+
+.nav-side ._wrap ol li,
+.nav-side ._wrap ol li button {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.nav-side ._wrap ol li button {
+    color: #d1f3ff66;
+    font-size: 17px;
+    line-height: 1;
+    margin-left: auto;
+    position: relative;
+    text-align: right;
+    transition: background 0.3s ease, color 0.2s ease, filter 0.6s ease;
+    white-space: nowrap;
+}
+
+body.use-mouse .nav-side ._wrap ol li button:hover {
+    color: #d1f3ff;
+}
+
+.nav-side ._wrap ol li button:after {
+    box-sizing: border-box;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    margin-bottom: -4px;
+    margin-left: 10px;
+    margin-top: 0;
+    opacity: 0.8;
+    position: relative;
+    transform: scale(1);
+    transition: background 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+    width: 22px;
+}
+
+.nav-side ._wrap ol li+.depth_1 {
+    margin-top: 10px;
+}
+
+.nav-side ._wrap ol li.depth_1 button {
+    font-size: 17px;
+    text-shadow: 0 3px 3px #0000008f;
+}
+
+.nav-side ._wrap ol li.depth_1 button:after {
+    opacity: 1;
+}
+
+.nav-side ._wrap ol li.depth_2 button {
+    font-size: 15px;
+    text-shadow: 0 3px 3px #0000008f;
+}
+
+.nav-side ._wrap ol li.-active button {
+    color: #d1f3ff;
+}
+
+.nav-side ._wrap ol li.depth_1.-active button:after {
+    background-image: url(../img/pc/side_ornate_on.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.page--r-raid-forbiddenrock {
+    background-color: #0c2836;
+}
+
+.page--r-raid-forbiddenrock .pc-content section.area {
+    display: flex;
+    flex-direction: column;
+    min-height: var(--maxvh-without-navtop);
+}
+
+.page--r-raid-forbiddenrock .pc-content section.section--episode {
+    overflow: hidden;
+}
+
+@media (min-width: 1281px) {
+    .page--r-raid-forbiddenrock .pc-content section.area {
+        height: auto;
+    }
+}
+
+.page--r-raid-forbiddenrock .pc-content section.area .area__visual>span {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.page--r-raid-forbiddenrock .pc-content section.area .area__visual ._dimmed {
+    background-color: #000;
+    opacity: 0.8;
+    transform: translateZ(0);
+    z-index: 1;
+}
+
+.page--r-raid-forbiddenrock .pc-content section.area .area__visual video {
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+    width: 100%;
+}
+
+.page--r-raid-forbiddenrock .pc-content section.area .area__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+.page--r-raid-forbiddenrock .pc-content section.area .area__content>* {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.page--r-raid-forbiddenrock .pc-content section.area .area__content> :not(.layout-escape) {
+    max-width: 1597px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.page--r-raid-forbiddenrock .pc-content section.area .area__content .area__content__wrap {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.page--r-raid-forbiddenrock .pc-content section.area .area__content ._content-title {
+    color: #0000 !important;
+    font-size: 0 !important;
+    -webkit-text-size-adjust: none;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--intro .area__content {
+    position: relative;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--intro .area__content ._title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    position: relative;
+    -webkit-text-size-adjust: none;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--intro .area__content ._title sup {
+    background-image: url(../img/pc/sec1_ttl.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 157px;
+    position: relative;
+    width: 1136px;
+    z-index: 1;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--intro .area__content ._title-effect {
+    height: 120%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--intro .area__content ._video-button {
+    background-image: url(../img/pc/sec1_btn.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #0000 !important;
+    font-size: 0 !important;
+    height: 128px;
+    margin: 10px 0 0 50px;
+    position: relative;
+    width: 115px;
+    -webkit-text-size-adjust: none;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--intro .area__content ._video-button:hover ._pattern svg {
+    opacity: 0;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--intro .area__content ._video-button:hover ._pattern_on {
+    opacity: 1;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--intro .area__content ._video-button ._pattern {
+    background-image: url(../img/pc/sec1_btn_pattern.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    left: 26px;
+    position: absolute;
+    top: 34px;
+    width: 47px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--intro .area__content ._video-button ._pattern svg {
+    opacity: 1;
+    position: relative;
+    transition: opacity 0.2s ease 0.3s;
+    z-index: 1;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--intro .area__content ._video-button ._pattern_on {
+    background-image: url(../img/pc/sec1_btn_pattern_on.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 77px;
+    left: 10px;
+    opacity: 0;
+    position: absolute;
+    top: 20px;
+    transition: opacity 0.2s ease 0.3s;
+    width: 76px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--raid .area__visual {
+    background-image: url(../img/pc/sec2_bg.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--raid .area__content {
+    max-width: 1400px;
+    position: relative;
+    width: 100%;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--raid .area__content .area__content__wrap ._title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    -webkit-text-size-adjust: none;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--raid .area__content .area__content__wrap ._title sup {
+    background-image: url(../img/pc/sec2_ttl.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 66px;
+    width: 332px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--raid .area__content .area__content__wrap ._detail {
+    background-image: url(../img/pc/sec2_con.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 582px;
+    width: 1259px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__visual {
+    background-image: url(../img/pc/sec3_bg.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__visual.--visualOn {
+    opacity: 1;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__visual .cloud {
+    background-image: url(../img/pc/sec3_cloud_bg.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 2000px;
+    left: -30%;
+    position: absolute;
+    top: -40%;
+    transition: transform 1s ease-out;
+    width: 3000px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__visual ._dimmed {
+    opacity: 0.7 !important;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content {
+    overflow: unset !important;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap {
+    position: relative;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header ._title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    -webkit-text-size-adjust: none;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header ._title sup {
+    background-image: url(../img/pc/sec3_ttl.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 62px;
+    width: 355px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header ._tab {
+    align-items: center;
+    background-image: url(../img/pc/sec3_tab_bg.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    height: 58px;
+    justify-content: center;
+    margin-top: 27px;
+    width: 652px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header ._tab ._tab-button {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header ._tab ._tab-button.--l:before,
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header ._tab ._tab-button.--r:before {
+    background-image: url(../img/pc/sec3_tab_on_bg.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 58px;
+    left: 30px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.2s ease-in-out;
+    width: 324px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header ._tab ._tab-button.--r:before {
+    left: auto;
+    right: 30px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header ._tab ._tab-button.-active span {
+    color: #d1f3ff;
+    text-shadow: 0 3px 3px #0000008f;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header ._tab ._tab-button.-active:before {
+    opacity: 1;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header ._tab ._tab-button span {
+    color: #94acb5;
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header ._tab ._tab-button span.t1 {
+    margin-left: 70px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header ._tab ._tab-button span.t2 {
+    margin-right: 70px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content {
+    background-color: initial;
+    height: 546px;
+    margin-top: 22px;
+    width: 100%;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item {
+    display: none;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.--typeOn {
+    display: block;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area {
+    height: 427px;
+    left: 50%;
+    margin-left: -40px;
+    position: absolute;
+    top: 80px;
+    transform: translate(-50%);
+    width: 439px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn {
+    color: #0000 !important;
+    font-size: 0 !important;
+    height: 104px;
+    position: absolute;
+    width: 100px;
+    z-index: 1;
+    -webkit-text-size-adjust: none;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn1 {
+    right: 14px;
+    top: 120px;
+    background-image: url(../img/pc/sec3_area_btn1.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn2 {
+    left: 196px;
+    top: 0;
+    background-image: url(../img/pc/sec3_area_btn2.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn3 {
+    left: 184px;
+    top: 210px;
+    background-image: url(../img/pc/sec3_area_btn3.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn4 {
+    left: 0;
+    top: 72px;
+    background-image: url(../img/pc/sec3_area_btn4.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn5 {
+    bottom: 2px;
+    left: 108px;
+    background-image: url(../img/pc/sec3_area_btn5.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .modal_box .area_modal {
+    display: none;
+    position: absolute;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .modal_box .area_modal.--on {
+    display: block;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .modal_box .area_modal .area_modal_close {
+    display: none;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .modal_box .area_modal.area_modal1 {
+    background-image: url(../img/pc/sec3_modal1.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 647px;
+    left: 380px;
+    top: -164px;
+    width: 460px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .modal_box .area_modal.area_modal2 {
+    background-image: url(../img/pc/sec3_modal2.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 329px;
+    left: 290px;
+    top: -62px;
+    width: 545px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .modal_box .area_modal.area_modal3 {
+    background-image: url(../img/pc/sec3_modal3.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 269px;
+    left: 246px;
+    top: 210px;
+    width: 555px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .modal_box .area_modal.area_modal4 {
+    background-image: url(../img/pc/sec3_modal4.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 329px;
+    left: -368px;
+    top: -60px;
+    width: 419px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .modal_box .area_modal.area_modal5 {
+    background-image: url(../img/pc/sec3_modal5.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 329px;
+    left: -340px;
+    top: 160px;
+    width: 458px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box {
+    height: 100%;
+    width: 100%;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box .swiper_video {
+    height: 523px;
+    margin: 0 auto;
+    position: relative;
+    width: 1080px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box .swiper_video .video_con {
+    height: 100%;
+    width: 100%;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box .swiper_video .video_con .swiper-wrapper {
+    height: 100%;
+    margin: 0 auto;
+    width: 925px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box .swiper_video .video_con .swiper-wrapper .swiper-slide {
+    height: 100%;
+    width: 100%;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box .swiper_video .video_con .swiper_btn {
+    color: #0000 !important;
+    font-size: 0 !important;
+    height: 94px;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 65px;
+    z-index: 1;
+    -webkit-text-size-adjust: none;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box .swiper_video .video_con .swiper_btn.swiper-btn-prev {
+    background-image: url(../img/pc/sec3_arrow_btn_p.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box .swiper_video .video_con .swiper_btn.swiper-btn-next {
+    background-image: url(../img/pc/sec3_arrow_btn_n.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 0;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box .swiper_video .video_box {
+    background-color: #212f35;
+    border: 2px solid #000;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%);
+    width: 925px;
+    z-index: 1;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box .swiper_video .video_box video {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box .swiper_video ._name {
+    align-items: center;
+    background-image: url(../img/pc/sec3_name_bg.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: -46px;
+    display: flex;
+    height: 84px;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 273px;
+    z-index: 2;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box .swiper_video ._name span {
+    color: #1e323e;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: -18px;
+    text-shadow: 0 2px 0 #ffffff40;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--bertes .area__visual {
+    background-image: url(../img/pc/sec4_bg.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._spec {
+    align-items: center;
+    column-gap: 360px;
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._spec .group {
+    align-items: center;
+    column-gap: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._spec .group .icon {
+    animation: fadeAnimation 6s linear infinite;
+    display: block;
+    height: 141px;
+    opacity: 0.4;
+    width: 116px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._spec .group .icon.icon1 {
+    animation-delay: 1s;
+    background-image: url(../img/pc/sec4_spec1.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._spec .group .icon.icon2 {
+    animation-delay: 2s;
+    background-image: url(../img/pc/sec4_spec2.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._spec .group .icon.icon3 {
+    animation-delay: 3s;
+    background-image: url(../img/pc/sec4_spec3.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._spec .group .icon.icon4 {
+    animation-delay: 4s;
+    background-image: url(../img/pc/sec4_spec4.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._spec .group .icon.icon5 {
+    animation-delay: 5s;
+    background-image: url(../img/pc/sec4_spec5.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._spec .group .icon.icon6 {
+    animation-delay: 6s;
+    background-image: url(../img/pc/sec4_spec6.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    -webkit-text-size-adjust: none;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._title .subTitle {
+    background-image: url(../img/pc/sec4_ttl_subTitle.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 61px;
+    width: 366px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._title sup {
+    background-image: url(../img/pc/sec4_ttl.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 65px;
+    width: 485px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._detail .reword {
+    background-image: url(../img/pc/sec4_reward.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 160px;
+    margin-top: 30px;
+    width: 622px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--episode .area__visual {
+    background-image: url(../img/pc/sec5_bg.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--episode .area__content .area__content__wrap ._title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    -webkit-text-size-adjust: none;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--episode .area__content .area__content__wrap ._title .subTitle {}
+
+.page--r-raid-forbiddenrock .pc-content .section--episode .area__content .area__content__wrap ._title sup {
+    background-image: url(../img/pc/sec5_ttl.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 62px;
+    width: 419px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--episode .area__content .area__content__wrap ._title .desc {
+    width: 400px;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--episode ._arm {
+    background-image: url(../img/pc/sec5_arm.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -590px;
+    height: 1190px;
+    left: 50%;
+    max-width: 2169px;
+    position: absolute;
+    transform: translate(-50%);
+    transition: transform 1s ease-out;
+    width: 100%;
+    z-index: 1;
+}
+
+i[class^="i--"]:after {
+    content: none;
+}
+
+[class*="page--"] {
+    position: relative;
+}
+
+main {
+    display: block;
+}
+
+.fullpage-section.swiper-vertical {
+    touch-action: unset;
+}
+
+.fullpage-section {
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.fullpage-section>.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.swiper-wrapper {
+    box-sizing: initial;
+    display: flex;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function,
+            initial);
+    width: 100%;
+    z-index: 1;
+}
+
+.fullpage-section>.swiper-wrapper>.swiper-slide {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-backface-hidden .swiper-slide {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    transition-property: transform;
+}
+
+.fullpage-section>.swiper-wrapper>.swiper-slide>* {
+    flex: 0 0 auto;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.fullpage-section>.swiper-wrapper>.swiper-slide.scrollable {
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.area,
+.area .area__visual {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.area {
+    background-size: initial;
+    position: relative;
+}
+
+.area .area__visual {
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--intro .area__content {
+    position: relative;
+}
+
+.area .area__content {
+    box-sizing: border-box;
+    z-index: 2;
+    position: relative;
+}
+
+.layout-escape {
+    max-width: unset !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}

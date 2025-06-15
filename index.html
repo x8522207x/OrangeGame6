@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="zh-tw" style="min-height: 100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="666" />
+    <meta property="og:image:height" content="364" />
+    <meta
+      property="og:title"
+      content="波拉西亞戰記｜第一次混沌團戰「禁忌的暗礁」登場！"
+    />
+    <meta
+      property="og:description"
+      content="古代妖精戰爭後被遺忘的北海孤島，如今以「禁忌的暗礁」重現，孕育出比死亡更殘酷的生命。"
+    />
+    <title>波拉西亞戰記｜第一次混沌團戰「禁忌的暗礁」登場！</title>
+    <link
+      rel="mask-icon"
+      href="img/icon/safari-pinned-tab.svg"
+      color="#162c32"
+    />
+    <link rel="shortcut icon" href="img/icon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&family=Syne:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/pc_page.css" />
+    <link rel="stylesheet" type="text/css" href="css/mb_page.css" />
+    <script
+      type="text/javascript"
+      src="https://frontend.beanfun.com/plugins/game-footer/game-footer.js"
+      id="game-footer"
+      prod="波拉西亞"
+      theme="dark"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body style="height: 0; max-height: var(--maxvh); min-height: 100%">
+    <div
+      id="app"
+      style="
+        box-sizing: border-box;
+        max-height: var(--maxvh);
+        overflow-y: scroll;
+      "
+    >
+      <div id="plate_base">
+        <div class="scrollbar -none">
+          <div class="scrollbar_thumb">
+            <span></span>
+          </div>
+        </div>
+        <div class="cursor"></div>
+      </div>
+      <div id="plate_modal">
+        <div class="modal type--youtube">
+          <div
+            class="modal_dimmed"
+            style="background-color: rgba(0, 0, 0, 0.8)"
+          >
+            <div class="loading">
+              <div
+                class="spinner_wave_dots"
+                style="--42f2e9e9: rgba(100, 100, 100, 1)"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal_wrap"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform: translate(0px, 0px);
+            "
+          >
+            <div class="modal_inner">
+              <div class="modal_box">
+                <div class="modal_box_theme"></div>
+                <div class="modal_box_veil">
+                  <div
+                    class="spinner_wave_dots"
+                    style="--42f2e9e9: rgba(100, 100, 100, 1)"
+                  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="modal_source">
+                  <span
+                    class="modal_source_ratio"
+                    style="padding-top: 56.4945%"
+                  >
+                  </span>
+                </div>
+              </div>
+              <button class="modal_close">
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="toast_area"></div>
+      </div>
+      <div id="plate_nav">
+        <div class="nav_top">
+          <div
+            class="event_gnb type_clear"
+            style="
+              --75824c3e: rgba(27, 30, 34, 1);
+              --47759c69: rgba(255, 255, 255, 1);
+              --028dbcb1: rgba(122, 99, 67, 1);
+              --aa46ff86: rgba(0, 0, 0, 1);
+              --4fcf305d: rgba(255, 255, 255, 1);
+              --2c0e22cd: rgba(122, 99, 67, 0.05);
+            "
+          >
+            <div class="event_gnb_default">
+              <div class="event_gnb_default_wrap">
+                <div class="event_gnb_default_left">
+                  <button class="event_gnb_menu">
+                    <span></span>
+                  </button>
+                  <a
+                    href="https://warsofprasia.beanfun.com/Main"
+                    class="event_gnb_logo"
+                    target="_self"
+                  >
+                    <img src="img/icon/LOGO-tw.png" class="icon" />
+                    <img src="img/icon/LOGO.webp" class="mobile_icon" />
+                  </a>
+                </div>
+                <div class="event_gnb_default_right">
+                  <div class="event_gnb_gamestart">
+                    <button>GAME START</button>
+                  </div>
+                  <div class="event_gnb_links">
+                    <ul>
+                      <li>
+                        <a
+                          href="https://warsofprasia.beanfun.com/Main"
+                          target="_self"
+                        >
+                          <i class="i--home -box"></i>
+                          <span></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.facebook.com/warsofprasia.tw"
+                          target="_self"
+                        >
+                          <i class="i--logo-fb -box"></i>
+                          <span></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.youtube.com/@user-warsofprasia"
+                          target="_self"
+                        >
+                          <i class="i--logo-youtube -box"></i>
+                          <span></span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="event_gnb_teleport"></div>
+          </div>
+          <div id="nav_top_teleport"></div>
+        </div>
+        <button class="gotop">
+          <i class="i--gotop"></i>
+        </button>
+        <div class="event_banner" style="--618ead0a: 95px">
+          <span class="event_banner_dimmed"></span>
+          <div class="event_banner_content" style="margin-top: 0px">
+            <div class="event_banner_menu">
+              <button class="event_banner_menu_button">
+                <span>活動</span>
+              </button>
+            </div>
+            <div class="event_banner_content_wrap">
+              <a
+                href="https://warsofprasia.beanfun.com/Main"
+                class="event_banner_home"
+                target="_self"
+              >
+                <div class="logo">
+                  <span></span>
+                  <img src="img/icon/LOGO-tw.png" class="visible_roomy" />
+                  <img src="img/icon/LOGO-tw.png" class="visible_mobile" />
+                </div>
+              </a>
+              <div class="event_banner_list">
+                <ul>
+                  <li>
+                    <a
+                      href="https://warsofprasia-event.beanfun.com/EventAD/EventAD?eventAdId=10634"
+                      class="event_banner_item"
+                      target="_self"
+                    >
+                      <div class="image">
+                        <img src="img/icon/banner_01.jpg" />
+                      </div>
+                      <div class="content">直升30等</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://warsofprasia-event.beanfun.com/EventAD/EventAD?eventAdId=10884"
+                      class="event_banner_item"
+                      target="_self"
+                    >
+                      <div class="image">
+                        <img src="img/icon/banner_02.webp" />
+                      </div>
+                      <div class="content">波拉魂養成班</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://warsofprasia-event.beanfun.com/eventad/eventad?eventADID=10872"
+                      class="event_banner_item"
+                      target="_self"
+                    >
+                      <div class="image">
+                        <img src="img/icon/banner_03.jpg" />
+                      </div>
+                      <div class="content">特別 WP Coupon</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://warsofprasia-event.beanfun.com/eventad/eventad?eventADID=10431"
+                      class="event_banner_item"
+                      target="_self"
+                    >
+                      <div class="image">
+                        <img src="img/icon/banner_04.jpg" />
+                      </div>
+                      <div class="content">10% 紅利回饋</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="event_banner_store">
+                <a
+                  href="https://play.google.com/store/apps/details?hl=zh-TW&id=com.gamania.twp&referrer=adjust_reftag%3Dc1yWGEH0cDaIG%26utm_source%3D%25E6%25AD%25A3%25E5%25BC%258F%25E5%25AE%2598%25E7%25B6%25B2_AOS"
+                  target="_self"
+                >
+                  <img
+                    src="img/icon/btn-download-gp.png"
+                    alt="Google Play下載"
+                  />
+                </a>
+                <a
+                  href="https://apps.apple.com/tw/app/%E6%B3%A2%E6%8B%89%E8%A5%BF%E4%BA%9E%E6%88%B0%E8%A8%98/id6451229143"
+                  target="_self"
+                >
+                  <img
+                    src="img/icon/btn-download-as.png"
+                    alt="Apple Store下載"
+                  />
+                </a>
+                <a
+                  href="https://warsofprasia.beanfun.com/Download?downloadTarget=1"
+                  target="_self"
+                >
+                  <img src="img/icon/btn-download-pc.png" alt="PC下載" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="plate--page"
+        style="--72516594: 0px; --9617c380: 0px; --cfc4fde0: 0px"
+      >
+        <div class="page--r-raid-forbiddenrock">
+          <main class="pc-content">
+            <nav class="nav-side">
+              <div class="_wrap">
+                <ol>
+                  <li class="depth_1">
+                    <button class="page_p1">INTRO</button>
+                  </li>
+                  <li class="depth_1">
+                    <button class="page_p2">混沌團戰</button>
+                  </li>
+                  <li class="depth_1">
+                    <button class="page_p3">禁忌的暗礁</button>
+                  </li>
+                  <li class="depth_2">
+                    <button class="page_p3">地區說明&nbsp;&nbsp;-</button>
+                  </li>
+                  <li class="depth_2">
+                    <button class="page_p4">全景&nbsp;&nbsp;-</button>
+                  </li>
+                  <li class="depth_1">
+                    <button class="page_p5">禁忌的貝勒泰斯</button>
+                  </li>
+                  <li class="depth_1">
+                    <button class="page_p6">劇情：氾濫的深淵</button>
+                  </li>
+                </ol>
+              </div>
+            </nav>
+            <div class="fullpage-section section-pages swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-page" data-title="INTRO">
+                  <section class="section--intro area">
+                    <div class="area__visual">
+                      <span class="_dimmed"></span>
+                      <video loop autoplay muted playsinline>
+                        <source src="./img/pc/sec1_bg.mp4" />
+                      </video>
+                    </div>
+                    <div class="area__content">
+                      <div class="area__content__wrap layout-escape">
+                        <div class="_title">
+                          <div style="font-size: 16px">2025.06.13 UPDATE</div>
+                          <div style="font-size: 18px">第一次混沌團戰</div>
+                          <sup></sup>
+                        </div>
+                        <div class="_title-effect">
+                          <svg viewBox="0 1 110 150" width="100%" height="100%">
+                            <filter
+                              id="noise"
+                              width="100%"
+                              height="100%"
+                              x="0%"
+                              y="0%"
+                            >
+                              <feTurbulence
+                                type="turbulence"
+                                baseFrequency="0.0547184"
+                                numOctaves="1"
+                                result="turbulence"
+                                seed="4"
+                              >
+                                <animate
+                                  attributeName="baseFrequency"
+                                  values="0.1;0;"
+                                  from="0"
+                                  to="100"
+                                  dur="20s"
+                                  repeatCount="indefinite"
+                                ></animate>
+                              </feTurbulence>
+                              <feDisplacementMap
+                                in="SourceGraphic"
+                                in2="turbulence"
+                                scale="5"
+                                xChannelSelector="R"
+                              ></feDisplacementMap>
+                            </filter>
+                            <image
+                              x="-69"
+                              y="13"
+                              width="251"
+                              height="100%"
+                              xlink:href="./img/pc/sec1_ttl_shadow.png"
+                              style="filter: url(#noise); will-change: filter"
+                            ></image>
+                          </svg>
+                        </div>
+                        <button class="_video-button">
+                          <span class="_pattern">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="100%"
+                              height="100%"
+                              viewBox="0 0 46 50"
+                              fill="none"
+                            >
+                              <defs>
+                                <filter id="glow">
+                                  <feGaussianBlur
+                                    stdDeviation="4"
+                                    result="blur"
+                                  ></feGaussianBlur>
+                                  <feMerge>
+                                    <feMergeNode in="blur"></feMergeNode>
+                                    <feMergeNode
+                                      in="SourceGraphic"
+                                    ></feMergeNode>
+                                  </feMerge>
+                                </filter>
+                                <mask id="strokeMask">
+                                  <rect
+                                    width="100%"
+                                    height="100%"
+                                    fill="#ECF7FD"
+                                  ></rect>
+                                  <image
+                                    x="0"
+                                    y="0"
+                                    width="47"
+                                    height="50"
+                                    href="./img/pc/sec1_btn_pattern.png"
+                                  ></image>
+                                </mask>
+                              </defs>
+                              <path
+                                d="M3.5 3L40.5 24L3 45V17.5"
+                                stroke="#ECF7FD"
+                                stroke-width="4"
+                                stroke-dasharray="300"
+                                stroke-dashoffset="300"
+                                style="
+                                  transition: stroke-dashoffset 0.7s ease-in-out;
+                                "
+                                filter="url(#glow)"
+                              ></path>
+                            </svg>
+                          </span>
+                          <span class="_pattern_on"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div
+                  class="swiper-slide swiper-slide-page"
+                  data-title="混沌團戰"
+                >
+                  <section class="section--raid area">
+                    <div class="area__visual"></div>
+                    <div class="area__content">
+                      <div class="area__content__wrap">
+                        <div class="_title">
+                          <sup></sup>
+                          <div>
+                            混沌團戰是完成所有「首領團戰」時可以挑戰的高階團戰內容。
+                            <br />
+                            請與最多5名的同伴組隊，並通過禁忌的暗礁來獲得特別獎勵。
+                          </div>
+                        </div>
+                        <div class="_detail"></div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div
+                  class="swiper-slide swiper-slide-page"
+                  data-title="地區說明  -"
+                >
+                  <section class="section--reef area">
+                    <div class="area__visual --visualOn">
+                      <div
+                        class="cloud"
+                        style="transform: translate(0px, 0px)"
+                      ></div>
+                    </div>
+                    <div class="area__content">
+                      <div class="area__content__wrap">
+                        <div class="_header">
+                          <div class="_title">
+                            <sup></sup>
+                            <div>
+                              為了獲得深淵的力量，展開妖精們實驗的克隆北海孤島。
+                              <br />
+                              AN850年古代妖精戰爭爆發後，研究所和實驗體被孤立並遺忘。
+                              <br />
+                              經歷千年的歲月後，作為「禁忌的暗礁」再次於該島上被世人熟知，正有著比死亡更殘酷的生命誕生。
+                            </div>
+                          </div>
+                          <div class="_tab">
+                            <button class="_tab-button --l -active">
+                              <span class="t1">地區說明</span>
+                            </button>
+                            <button class="_tab-button --r">
+                              <span class="t2">全景</span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="_content">
+                          <div class="_display-item type--1 --typeOn">
+                            <div class="_area">
+                              <div class="btn_box">
+                                <button type="button" class="btn btn1">
+                                  침식된 매립지</button
+                                ><button type="button" class="btn btn2">
+                                  금단의 실험실</button
+                                ><button type="button" class="btn btn3">
+                                  감시의 공터</button
+                                ><button type="button" class="btn btn4">
+                                  좌초된 배</button
+                                ><button type="button" class="btn btn5">
+                                  버려진 수용소
+                                </button>
+                              </div>
+                              <div class="modal_box">
+                                <div class="area_modal area_modal1">
+                                  <button
+                                    type="button"
+                                    class="area_modal_close"
+                                  >
+                                    close
+                                  </button>
+                                </div>
+                                <div class="area_modal area_modal2">
+                                  <button
+                                    type="button"
+                                    class="area_modal_close"
+                                  >
+                                    close
+                                  </button>
+                                </div>
+                                <div class="area_modal area_modal3">
+                                  <button
+                                    type="button"
+                                    class="area_modal_close"
+                                  >
+                                    close
+                                  </button>
+                                </div>
+                                <div class="area_modal area_modal4">
+                                  <button
+                                    type="button"
+                                    class="area_modal_close"
+                                  >
+                                    close
+                                  </button>
+                                </div>
+                                <div class="area_modal area_modal5">
+                                  <button
+                                    type="button"
+                                    class="area_modal_close"
+                                  >
+                                    close
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div
+                  class="swiper-slide swiper-slide-page"
+                  data-title="全景  -"
+                >
+                  <section class="section--reef area">
+                    <div class="area__visual --visualOn">
+                      <span class="_dimmed"></span
+                      ><video
+                        loop=""
+                        autoplay=""
+                        muted=""
+                        playsinline=""
+                        src="./img/pc/sec3_bg_1.mp4"
+                      ></video>
+                    </div>
+                    <div class="area__content">
+                      <div class="area__content__wrap">
+                        <div class="_header">
+                          <div class="_title">
+                            <sup></sup>
+                            <div>
+                              為了獲得深淵的力量，展開妖精們實驗的克隆北海孤島。
+                              <br />
+                              AN850年古代妖精戰爭爆發後，研究所和實驗體被孤立並遺忘。
+                              <br />
+                              經歷千年的歲月後，作為「禁忌的暗礁」再次於該島上被世人熟知，正有著比死亡更殘酷的生命誕生。
+                            </div>
+                          </div>
+                          <div class="_tab">
+                            <button class="_tab-button --l">
+                              <span class="t1">地區說明</span></button
+                            ><button class="_tab-button --r -active">
+                              <span class="t2">全景</span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="_content">
+                          <div class="_display-item type--2 --typeOn">
+                            <div class="swiper_box">
+                              <div class="swiper_video">
+                                <div
+                                  class="swiper video_con swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden"
+                                >
+                                  <div
+                                    class="swiper-wrapper"
+                                    id="swiper-wrapper-ef48019e331f985c"
+                                    aria-live="polite"
+                                    style="
+                                      transition-duration: 0ms;
+                                      transition-delay: 0ms;
+                                    "
+                                  >
+                                    <div
+                                      class="swiper-slide swiper-slide-active"
+                                      data-swiper-slide-index="0"
+                                      role="group"
+                                      aria-label="1 / 4"
+                                      style="
+                                        width: 1080px;
+                                        transition-duration: 0ms;
+                                      "
+                                    ></div>
+                                    <div
+                                      class="swiper-slide swiper-slide-next"
+                                      data-swiper-slide-index="1"
+                                      role="group"
+                                      aria-label="2 / 4"
+                                      style="
+                                        width: 1080px;
+                                        transition-duration: 0ms;
+                                      "
+                                    ></div>
+                                    <div
+                                      class="swiper-slide"
+                                      data-swiper-slide-index="2"
+                                      role="group"
+                                      aria-label="3 / 4"
+                                      style="
+                                        width: 1080px;
+                                        transition-duration: 0ms;
+                                      "
+                                    ></div>
+                                    <div
+                                      class="swiper-slide"
+                                      data-swiper-slide-index="3"
+                                      role="group"
+                                      aria-label="4 / 4"
+                                      style="
+                                        width: 1080px;
+                                        transition-duration: 0ms;
+                                      "
+                                    ></div>
+                                  </div>
+                                  <button
+                                    class="swiper_btn swiper-btn-prev"
+                                    tabindex="0"
+                                    aria-label="Previous slide"
+                                    aria-controls="swiper-wrapper-ef48019e331f985c"
+                                  >
+                                    prev
+                                  </button>
+                                  <button
+                                    class="swiper_btn swiper-btn-next"
+                                    tabindex="0"
+                                    aria-label="Next slide"
+                                    aria-controls="swiper-wrapper-ef48019e331f985c"
+                                  >
+                                    next
+                                  </button>
+                                  <span
+                                    class="swiper-notification"
+                                    aria-live="assertive"
+                                    aria-atomic="true"
+                                  ></span>
+                                </div>
+                                <div class="video_box">
+                                  <video
+                                    loop=""
+                                    autoplay=""
+                                    muted=""
+                                    playsinline=""
+                                    src="./img/pc/sec1_bg.mp4"
+                                  ></video>
+                                </div>
+                                <p class="_name">
+                                  <span>廢棄的收容所</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div
+                  class="swiper-slide swiper-slide-page"
+                  data-title="禁忌的貝勒泰斯"
+                >
+                  <section class="section--bertes area">
+                    <div class="area__visual"></div>
+                    <div class="area__content">
+                      <div class="area__content__wrap">
+                        <div class="_spec">
+                          <div class="group">
+                            <span class="icon icon1"></span
+                            ><span class="icon icon2"></span
+                            ><span class="icon icon3"></span>
+                          </div>
+                          <div class="group">
+                            <span class="icon icon4"></span
+                            ><span class="icon icon5"></span
+                            ><span class="icon icon6"></span>
+                          </div>
+                        </div>
+                        <div class="_title">
+                          <div class="subTitle"></div>
+                          <sup></sup>
+                          <div class="desc">
+                            妖精們為了研究而創造通往深淵的路，在「交界」附近深淵蠶繭中誕生的希亞爾。
+                            <br />
+                            在禁忌的暗礁吸收因實驗而犧牲的地蜘蛛，並羽化成蝴蝶。
+                            <br />
+                            以犧牲者的記憶為原型，本能地模仿他們，一直將自己當作人類，但在漫長睡眠中醒來後便看到為了清除自己而攻擊自己的人類景象。
+                          </div>
+                        </div>
+                        <div class="_detail">
+                          <div class="reword"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div
+                  class="swiper-slide swiper-slide-page"
+                  data-title="劇情：氾濫的深淵"
+                >
+                  <section class="section--episode area">
+                    <div class="area__visual"></div>
+                    <div class="area__content">
+                      <div class="area__content__wrap">
+                        <div class="_title">
+                          <div class="subTitle">新劇情</div>
+                          <sup></sup>
+                          <div class="desc">
+                            在探勘中發現未知的島嶼，禁忌的暗礁。
+                            <br />
+                            蕾姿克正在研究從那裡帶來的深淵蠶繭。
+                            <br />
+                            在研究沒有進展的情況下，突然出現「可疑的老人」建議，如果是具有亞奎力量的守護者，可以喚醒蠶繭。
+                            <br /><br />
+                            深淵蠶繭對亞奎的力量產生反應，逐漸染上黑暗，不久後不能甦醒的邪惡存在，在被遺忘的島嶼上醒來...
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="_arm"
+                      style="transform: translateX(-50%) translate(0px, 0px)"
+                    ></div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </main>
+          <main class="mobile-content">
+            <section class="section--intro area">
+              <div class="area__visual">
+                <span class="_dimmed"></span>
+                <video loop="" autoplay="" muted="" playsinline="">
+                  <source src="./img/mo/sec1_bg.mp4" />
+                </video>
+              </div>
+              <div class="area__content">
+                <div class="area__content__wrap layout-escape">
+                  <div class="_title">
+                    <div style="font-size: 16px">2025.06.13 UPDATE</div>
+                    <div style="font-size: 18px">第一次混沌團戰</div>
+                    <sup></sup>
+                  </div>
+                  <button class="_video-button"></button>
+                </div>
+              </div>
+            </section>
+            <section class="section--raid area">
+              <div class="area__visual"></div>
+              <div class="area__content">
+                <div class="area__content__wrap layout-escape">
+                  <div class="_title">
+                    <sup></sup>
+                    <div>
+                      混沌團戰是完成所有「首領團戰」時可以挑戰的高階團戰內容。
+                      <br />
+                      請與最多5名的同伴組隊，並通過禁忌的暗礁來獲得特別獎勵。
+                    </div>
+                  </div>
+                  <div class="_detail"></div>
+                </div>
+              </div>
+            </section>
+            <section class="section--reef area">
+              <div class="_modalDimmed"></div>
+              <div class="area__visual1 --visualOn"></div>
+              <div class="area__visual2 --type1"></div>
+              <div class="modal_box">
+                <div class="area_modal area_modal1">
+                  <button type="button" class="area_modal_close">close</button>
+                </div>
+                <div class="area_modal area_modal2">
+                  <button type="button" class="area_modal_close">close</button>
+                </div>
+                <div class="area_modal area_modal3">
+                  <button type="button" class="area_modal_close">close</button>
+                </div>
+                <div class="area_modal area_modal4">
+                  <button type="button" class="area_modal_close">close</button>
+                </div>
+                <div class="area_modal area_modal5">
+                  <button type="button" class="area_modal_close">close</button>
+                </div>
+              </div>
+              <div class="area__content">
+                <div class="area__content__wrap">
+                  <div class="_header">
+                    <div class="_title">
+                      <sup></sup>
+                      <div>
+                        為了獲得深淵的力量，展開妖精們實驗的克隆北海孤島。
+                        <br />
+                        AN850年古代妖精戰爭爆發後，研究所和實驗體被孤立並遺忘。
+                        <br />
+                        經歷千年的歲月後，作為「禁忌的暗礁」再次於該島上被世人熟知，正有著比死亡更殘酷的生命誕生。
+                      </div>
+                    </div>
+                    <div class="_tab">
+                      <button class="_tab-button --l -active">
+                        <span class="t1">地區說明</span>
+                      </button>
+                      <button class="_tab-button --r">
+                        <span class="t2">全景</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="_content">
+                    <div class="_display-item type--1 --typeOn">
+                      <div class="_area">
+                        <div class="btn_box">
+                          <!--[--><button type="button" class="btn btn1">
+                            침식된 매립지</button
+                          ><button type="button" class="btn btn2">
+                            금단의 실험실</button
+                          ><button type="button" class="btn btn3">
+                            감시의 공터</button
+                          ><button type="button" class="btn btn4">
+                            좌초된 배</button
+                          ><button type="button" class="btn btn5">
+                            버려진 수용소</button
+                          ><!--]-->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="_display-item type--2">
+                      <div class="swiper_box">
+                        <div class="swiper_video">
+                          <div
+                            class="swiper video_con swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden"
+                          >
+                            <div
+                              class="swiper-wrapper"
+                              id="swiper-wrapper-ef48019e331f985c"
+                              aria-live="polite"
+                            >
+                              <div
+                                class="swiper-slide swiper-slide-active"
+                              ></div>
+                              <div class="swiper-slide swiper-slide-next"></div>
+                              <div class="swiper-slide"></div>
+                              <div class="swiper-slide"></div>
+                            </div>
+                            <button
+                              class="swiper_btn swiper-btn-prev"
+                              tabindex="0"
+                              aria-label="Previous slide"
+                              aria-controls="swiper-wrapper-ef48019e331f985c"
+                            >
+                              prev
+                            </button>
+                            <button
+                              class="swiper_btn swiper-btn-next"
+                              tabindex="0"
+                              aria-label="Next slide"
+                              aria-controls="swiper-wrapper-ef48019e331f985c"
+                            >
+                              next
+                            </button>
+                            <span
+                              class="swiper-notification"
+                              aria-live="assertive"
+                              aria-atomic="true"
+                            ></span>
+                          </div>
+                          <div class="video_box">
+                            <video
+                              loop=""
+                              autoplay=""
+                              muted=""
+                              playsinline=""
+                              src="./img/pc/sec1_bg.mp4"
+                            ></video>
+                          </div>
+                          <p class="_name">
+                            <span>廢棄的收容所</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section--bertes area">
+              <div class="area__visual"></div>
+              <div class="area__content">
+                <div class="area__content__wrap layout-escape">
+                  <div class="subTitle"></div>
+                  <div class="_spec">
+                    <div class="group">
+                      <span class="icon icon1"></span
+                      ><span class="icon icon2"></span
+                      ><span class="icon icon3"></span>
+                    </div>
+                    <div class="group">
+                      <span class="icon icon4"></span
+                      ><span class="icon icon5"></span
+                      ><span class="icon icon6"></span>
+                    </div>
+                  </div>
+                  <div class="_title">
+                    <sup></sup>
+                    <div class="desc">
+                      妖精們為了研究而創造通往深淵的路，在「交界」附近深淵蠶繭中誕生的希亞爾。
+                      <br />
+                      在禁忌的暗礁吸收因實驗而犧牲的地蜘蛛，並羽化成蝴蝶。
+                      <br />
+                      以犧牲者的記憶為原型，本能地模仿他們，一直將自己當作人類，但在漫長睡眠中醒來後便看到為了清除自己而攻擊自己的人類景象。
+                    </div>
+                  </div>
+                  <div class="_detail">
+                    <div class="reword"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section--episode area">
+              <div class="area__visual"></div>
+              <div class="area__content">
+                <div class="area__content__wrap layout-escape">
+                  <div class="_title">
+                    <div class="subTitle">新劇情</div>
+                    <sup></sup>
+                    <div class="desc">
+                      在探勘中發現未知的島嶼，禁忌的暗礁。
+                      <br />
+                      蕾姿克正在研究從那裡帶來的深淵蠶繭。
+                      <br />
+                      在研究沒有進展的情況下，突然出現「可疑的老人」建議，如果是具有亞奎力量的守護者，可以喚醒蠶繭。
+                      <br /><br />
+                      深淵蠶繭對亞奎的力量產生反應，逐漸染上黑暗，不久後不能甦醒的邪惡存在，在被遺忘的島嶼上醒來...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- <script
+    type="text/javascript"
+    src="https://tw.beanfun.com/js/GA_CodeNew.js"
+    defer
+  ></script> -->
+</html>

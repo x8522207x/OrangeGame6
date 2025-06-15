@@ -1,0 +1,533 @@
+@media (max-width: 1280px) and (min-width: 769px) {
+    .page--r-raid-forbiddenrock .mobile-content section.section--reef .area__content {
+        left: 50%;
+        overflow: unset !important;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -58%);
+        width: 100%;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content section.area .area__content> :not(.layout-escape) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content section.area .area__content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        margin: auto;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content section.area .area__content .area__content__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--intro .area__visual ._dimmed {
+        background-color: #000;
+        height: 100%;
+        left: 0;
+        opacity: .8;
+        position: absolute;
+        top: 0;
+        transform: translateZ(0);
+        width: 100%;
+        z-index: 1;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--intro .area__visual video {
+        height: 100%;
+        object-fit: cover;
+        vertical-align: top;
+        width: 100%;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .area .area__content .area__content__wrap ._title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        -webkit-text-size-adjust: none;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--intro .area__content .area__content__wrap ._title sup {
+        height: 272px;
+        width: 664px;
+        margin-top: 30px;
+        background-image: url(../img/mo/sec1_ttl.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--intro .area__content .area__content__wrap ._video-button {
+        background-image: url(../img/mo/sec1_btn.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 117px;
+        width: 97px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--raid .area__visual {
+        background-image: url(../img/mo/sec2_bg.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--raid .area__content .area__content__wrap ._title {
+        margin-top: 50px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--raid .area__content .area__content__wrap ._title sup {
+        background-image: url(../img/mo/sec2_ttl.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 80px;
+        width: 283px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--raid .area__content .area__content__wrap ._detail {
+        background-image: url(../img/mo/sec2_con_content.png);
+        height: 1132px;
+        width: 646px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area {
+        height: 528px;
+        left: 50%;
+        margin-left: -8px;
+        position: absolute;
+        top: 116px;
+        transform: translate(-50%);
+        width: 543px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn1 {
+        right: 30px;
+        top: 240px;
+        background-size: cover;
+        width: 119px;
+        height: 109px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn2 {
+        left: 225px;
+        top: 85px;
+        background-size: cover;
+        width: 119px;
+        height: 109px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn3 {
+        left: 220px;
+        top: 360px;
+        background-size: cover;
+        width: 119px;
+        height: 109px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn4 {
+        left: 10px;
+        top: 170px;
+        background-size: cover;
+        width: 97px;
+        height: 109px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn5 {
+        left: 125px;
+        top: 470px;
+        background-size: cover;
+        width: 122px;
+        height: 111px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .modal_box .area_modal .area_modal_close {
+        background-image: url(../img/mo/sec3_modal_close.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 76px;
+        position: absolute;
+        right: -30px;
+        top: -30px;
+        width: 76px;
+        display: block;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .modal_box .area_modal.area_modal1 {
+        background-image: url(../img/mo/sec3_modal_con1.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 712px;
+        width: 342px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .modal_box .area_modal.area_modal2 {
+        background-image: url(../img/mo/sec3_modal_con2.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 360px;
+        width: 342px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .modal_box .area_modal.area_modal3 {
+        background-image: url(../img/mo/sec3_modal_con3.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 294px;
+        width: 343px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .modal_box .area_modal.area_modal4 {
+        background-image: url(../img/mo/sec3_modal_con4.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 360px;
+        width: 343px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .modal_box .area_modal.area_modal5 {
+        background-image: url(../img/mo/sec3_modal_con5.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 360px;
+        width: 343px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .modal_box .area_modal {
+        left: 50% !important;
+        position: absolute !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box .swiper_video {
+        height: 100%;
+        width: 100%;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box .swiper_video {
+        height: 322px;
+        margin: 0 auto;
+        position: relative;
+        transform: translateY(164px);
+        width: 690px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box .swiper_video .video_box {
+        background-color: #212f35;
+        border: 2px solid #000;
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        top: 0;
+        transform: translate(-50%);
+        width: 571px;
+        z-index: 1;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--episode .area__content .area__content__wrap ._title sup {
+        background-image: url(../img/mo/sec5_ttl.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 80px;
+        width: 346px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .nav-side {
+        display: none;
+    }
+
+    .pc-content {
+        display: none;
+    }
+
+    .mobile-content {
+        display: block;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content section.area {
+        height: 1350px;
+        transform: none !important;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__visual {
+        background-image: url(../img/mo/sec3_bg0.jpg);
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__visual .cloud {
+        display: none;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__visual {
+        background-image: url(../img/mo/sec4_bg.jpg);
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._spec .group {
+        display: block;
+        align-items: center;
+        column-gap: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._spec {
+        margin-bottom: 180px;
+        margin-top: 70px;
+        align-items: center;
+        column-gap: 360px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._spec .group .icon {
+        margin-bottom: 30px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._spec .group .icon {
+        animation: fadeAnimation 6s linear infinite;
+        display: block;
+        height: 141px;
+        opacity: 0.4;
+        width: 116px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._spec .group .icon.icon1 {
+        animation-delay: 1s;
+        background-image: url(../img/pc/sec4_spec1.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._spec .group .icon.icon2 {
+        animation-delay: 2s;
+        background-image: url(../img/pc/sec4_spec2.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._spec .group .icon.icon3 {
+        animation-delay: 3s;
+        background-image: url(../img/pc/sec4_spec3.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._spec .group .icon.icon4 {
+        animation-delay: 4s;
+        background-image: url(../img/pc/sec4_spec4.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._spec .group .icon.icon5 {
+        animation-delay: 5s;
+        background-image: url(../img/pc/sec4_spec5.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._spec .group .icon.icon6 {
+        animation-delay: 6s;
+        background-image: url(../img/pc/sec4_spec6.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._title .desc {
+        width: 500px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap .subTitle {
+        background-image: url(../img/mo/sec4_ttl_subTitle.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 60px;
+        width: 402px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._title sup {
+        background-image: url(../img/mo/sec4_ttl.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 80px;
+        width: 484px;
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._detail .reword {
+        background-image: url(../img/pc/sec4_reward.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 166px;
+        margin-top: 30px;
+        width: 628px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--episode .area__visual {
+        background-image: url(../img/mo/sec5_bg.jpg);
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--episode .area__content .area__content__wrap ._title {
+        position: relative;
+        top: -400px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--episode ._arm {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .page--r-raid-forbiddenrock .mobile-content section.area .area__content> :not(.layout-escape) {
+        max-width: 572px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content section.area .area__content {
+        justify-content: flex-start;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content section.area .area__content .area__content__wrap {
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--intro .area__content ._title sup {
+        height: 52px;
+        width: 378.7px;
+        margin-top: 30px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--intro .area__content ._title-effect {
+        height: calc(52px * 1.2);
+        width: 378.7px;
+        position: unset;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--intro .area__content ._title-effect image {
+        y: 0;
+        width: 240px;
+        x: -65;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--raid .area__content .area__content__wrap ._detail {
+        background-image: url(../img/mo/sec2_con_content.png);
+        height: 560px;
+        width: 322px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap {
+        display: block;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._header ._tab {
+        width: 326px;
+        height: 29px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._header ._tab ._tab-button.--l:before,
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._header ._tab ._tab-button.--r:before {
+        width: 162px;
+        height: 29px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._header ._tab ._tab-button span {
+        font-size: 17px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area {
+        height: 665px;
+        left: 50%;
+        position: relative;
+        transform: translate(-50%);
+        width: 638px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn1 {
+        right: 14px;
+        top: 150px;
+        background-size: cover;
+        width: 119px;
+        height: 109px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn2 {
+        left: 295px;
+        top: -25px;
+        background-size: cover;
+        width: 119px;
+        height: 109px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn3 {
+        left: 260px;
+        top: 300px;
+        background-size: cover;
+        width: 119px;
+        height: 109px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn4 {
+        left: 75px;
+        top: 195px;
+        background-size: cover;
+        width: 97px;
+        height: 109px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn5 {
+        bottom: -25px;
+        left: 140px;
+        background-size: cover;
+        width: 122px;
+        height: 111px;
+    }
+}

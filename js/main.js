@@ -1,7 +1,7 @@
 let startY = 0;
 
 $(document).ready(() => {
-    // window.addEventListener('resize', updateMaxVH);
+    window.addEventListener('resize', updateMaxVH);
 
     $('.modal_wrap').css('display', 'none');
     setTimeout(() => {
@@ -46,11 +46,7 @@ $(document).ready(() => {
         $('.page--r-raid-forbiddenrock .mobile-content .section--reef').removeClass('--dimOn');
     });
 
-    let pcSwiperPage, mobileSwiperPage, p4SwiperPage, tabletSwiperPage;
-
-    function tabletTouchMove(swiper) {
-        return (e) => handleSmallHeight(swiper, e);
-    }
+    let pcSwiperPage;
 
     function pcTouchMove(swiper) {
         return (e) => {
@@ -212,147 +208,18 @@ $(document).ready(() => {
         });
     };
 
-    // const tabletSwiper = () => {
-    //     tabletSwiperPage = new Swiper('.section-pages', {
-    //         direction: 'vertical',
-    //         touchReleaseOnEdges: true,
-    //         mousewheel: {
-    //             releaseOnEdges: false,
-    //         },
-    //         loop: false,
-    //         freeMode: {
-    //             enabled: true,
-    //             sticky: false,
-    //             momentumBounce: false,
-    //         },
-    //         noSwiping: true,
-    //         noSwipingSelector: 'button',
-    //         autoHeight: false,
-    //         speed: 1000,
-    //         slidesPerView: 1,
-    //         spaceBetween: 0,
-    //         watchSlidesProgress: true,
-    //         allowTouchMove: true,
-    //         on: {
-    //             init: (swiper) => {
-    //                 // tabletTouchMoveHandler = tabletTouchMove(swiper);
-    //                 // pcWheelHandler = pcWheel(swiper);
-    //                 // $('.UNI-footer').clone().appendTo('.section--episode');
-    //                 // $('.UNI-footer')[1]?.remove();
-    //                 // $('.UNI-footer').css('z-index', 100).css('position', 'absolute').css('width', '100%').css('height', 80).css('bottom', 0);
-
-    //                 $('.gotop').on('click', () => {
-    //                     swiper.slideTo(0);
-    //                     swiper.slides.forEach(slide => {
-    //                         slide.scrollTop = 0;
-    //                     })
-    //                 });
-
-    //                 $('.scroll').on('click', () => {
-    //                     swiper.slideTo(1);
-    //                 });
-
-    //                 $('.UNI-footer').css('display', 'none');
-
-    //                 $('._tab-button.--l').on('click', () => swiper.slideTo(2));
-    //                 $('._tab-button.--r').on('click', () => swiper.slideTo(3));
-    //                 // document.querySelectorAll('.swiper-slide-page').forEach(node => {
-    //                 //     node.addEventListener('wheel', pcWheelHandler, { passive: true });
-    //                 //     node.addEventListener('touchstart', pcTouchStart, { passive: true });
-    //                 // });
-    //             },
-    //             slideChange: (swiper) => {
-    //                 ['-active'].forEach(cl => ['.depth_1', '.depth_2'].forEach(ele => $(ele).removeClass(cl)));
-    //                 $('.swiper-slide-page').off('scroll');
-    //                 $('.swiper-slide-page').removeClass('scrollable');
-    //                 $('.gotop').removeClass('show');
-    //                 $('.UNI-footer').css('display', 'none');
-    //                 $('.swiper-slide-page')[swiper.realIndex].classList.add('scrollable');
-
-    //                 if (swiper.realIndex !== 0) {
-    //                     $('.gotop').addClass('show');
-    //                 }
-
-    //                 if ([0, 1].includes(swiper.realIndex)) {
-    //                     $('.depth_1')[swiper.realIndex].classList.add('-active');
-    //                 } else if ([2, 3].includes(swiper.realIndex)) {
-    //                     $('.depth_1')[2].classList.add('-active');
-    //                     $('.depth_2')[swiper.realIndex - 2].classList.add('-active');
-    //                 } else {
-    //                     $('.depth_1')[swiper.realIndex - 1].classList.add('-active');
-    //                 }
-
-    //                 if (swiper.realIndex === 5) {
-    //                     $('.UNI-footer').css('display', 'block');
-    //                 }
-    //             },
-    //         }
-    //     });
-
-    //     $('.swiper-slide-page')[0].classList.add('scrollable');
-    //     tabletSwiperPage.slideTo(0);
-    //     $('.depth_1')[0].classList.add('-active');
-    // };
-
-    // const mobileSwiper = () => {
-    //     mobileSwiperPage = new Swiper('.section-pages', {
-    //         direction: 'vertical',
-    //         slidesPerView: "auto",
-    //         touchReleaseOnEdges: true,
-    //         mousewheel: {
-    //             releaseOnEdges: true,
-    //             enabled: false,
-    //         },
-    //         loop: false,
-    //         freeMode: {
-    //             enabled: true,
-    //             sticky: false,
-    //             momentumBounce: false,
-    //         },
-    //         autoHeight: true,
-    //         speed: 0,
-    //         passiveListeners: true,
-    //         allowTouchMove: true,
-    //         on: {
-    //             init: (swiper) => {
-    //                 $('.gotop').on('click', () => {
-    //                     swiper.slideTo(0);
-    //                     swiper.slides.forEach(slide => {
-    //                         slide.scrollTop = 0;
-    //                     })
-    //                 });
-
-    //                 $('.scroll').on('click', () => {
-    //                     swiper.slideTo(1);
-    //                 });
-
-    //                 $('.UNI-footer').css('display', 'none');
-
-    //                 $('._tab-button.--l').on('click', () => swiper.slideTo(2));
-    //                 $('._tab-button.--r').on('click', () => swiper.slideTo(3));
-    //             },
-    //             slideChange: (swiper) => {
-    //                 $('.gotop').removeClass('show');
-    //                 $('.UNI-footer').css('display', 'none');
-    //                 if (swiper.realIndex !== 0) {
-    //                     $('.gotop').addClass('show');
-    //                 }
-
-    //                 if (swiper.realIndex === 5) {
-    //                     $('.UNI-footer').css('display', 'block');
-    //                 }
-    //             }
-    //         }
-    //     });
-    // };
-
     if ($(window).width() > 1280) {
         $('.event_gnb').addClass('type_clear');
         $('.event_gnb').removeClass('type_default');
         pcSwiper();
-    } else if ($(window).width() > 768 && $(window).width() <= 1280) {
-        $('.event_gnb').addClass('type_clear');
-        $('.event_gnb').removeClass('type_default');
+    } else {
+        if ($(window).width() > 768) {
+            $('.event_gnb').addClass('type_clear');
+            $('.event_gnb').removeClass('type_default');
+        } else {
+            $('.event_gnb').removeClass('type_clear');
+            $('.event_gnb').addClass('type_default');
+        }
         const visual1 = $('.page--r-raid-forbiddenrock .mobile-content .section--reef .area__visual1');
         const content1 = $('.page--r-raid-forbiddenrock .mobile-content .section--reef ._content .type--1');
         const visual2 = $('.page--r-raid-forbiddenrock .mobile-content .section--reef .area__visual2');
@@ -387,50 +254,73 @@ $(document).ready(() => {
                 content2.addClass('--typeOn');
             }
         });
-    } else {
-        $('.event_gnb').removeClass('type_clear');
-        $('.event_gnb').addClass('type_default');
     }
     p4Swiper();
 
     function updateMaxVH() {
-        // const root = document.documentElement;
-        // const newMaxVh = `${window.innerHeight}px`;
-        // root.style.setProperty('--maxvh', newMaxVh);
-        if ($(window).width() > 768) {
-            // $('.event_gnb').addClass('type_clear');
-            // $('.event_gnb').removeClass('type_default');
-            // if (mobileSwiperPage) {
-            //     mobileSwiperPage.destroy(true, true); // 銷毀 Swiper 實例
-            //     mobileSwiperPage = null; // 重置為 null
-            //     p1source.src = "img/page1/p1_bg.webm";
-            //     p1video.load();
-            // }
+        const root = document.documentElement;
+        const newMaxVh = `${window.innerHeight}px`;
+        root.style.setProperty('--maxvh', newMaxVh);
+        if ($(window).width() > 1280) {
+            $('.event_gnb').addClass('type_clear');
+            $('.event_gnb').removeClass('type_default');
 
-            // if (pcSwiperPage) {
-            //     pcSwiperPage.update();
-            // } else {
-            //     setTimeout(() => pcSwiper());
-            // }
-        } else {
-            // if (pcSwiperPage) {
-            //     p1source.src = "img/page1/p1_bg_m.webm";
-            //     p1video.load();
-            //     pcSwiperPage.destroy(true, true); // 銷毀 Swiper 實例
-            //     pcSwiperPage = null; // 重置為 null
-            //     document.querySelectorAll('.swiper-slide-page').forEach(node => {
-            //         node.removeEventListener('wheel', pcWheelHandler, { passive: true });
-            //         node.removeEventListener('touchstart', pcTouchStart, { passive: true });
-            //     });
-            // }
-
-            // $('.event_gnb').addClass('type_default');
-            // $('.event_gnb').removeClass('type_clear');
-            if (mobileSwiperPage) {
-                // mobileSwiperPage.update();
+            if (pcSwiperPage) {
+                pcSwiperPage.update();
             } else {
-                // setTimeout(() => mobileSwiper());
+                setTimeout(() => pcSwiper());
             }
+        } else {
+            if (pcSwiperPage) {
+                pcSwiperPage.destroy(true, true); // 銷毀 Swiper 實例
+                pcSwiperPage = null; // 重置為 null
+                document.querySelectorAll('.swiper-slide-page').forEach(node => {
+                    node.removeEventListener('wheel', pcWheelHandler, { passive: true });
+                    node.removeEventListener('touchstart', pcTouchStart, { passive: true });
+                });
+            }
+
+            if ($(window).width() > 768) {
+                $('.event_gnb').addClass('type_clear');
+                $('.event_gnb').removeClass('type_default');
+            } else {
+                $('.event_gnb').removeClass('type_clear');
+                $('.event_gnb').addClass('type_default');
+            }
+            const visual1 = $('.page--r-raid-forbiddenrock .mobile-content .section--reef .area__visual1');
+            const content1 = $('.page--r-raid-forbiddenrock .mobile-content .section--reef ._content .type--1');
+            const visual2 = $('.page--r-raid-forbiddenrock .mobile-content .section--reef .area__visual2');
+            const content2 = $('.page--r-raid-forbiddenrock .mobile-content .section--reef ._content .type--2');
+            $('._tab-button.--l').on('click', (e) => {
+                if (!e.currentTarget.classList.contains('-active')) {
+                    e.currentTarget.classList.add('-active');
+                }
+
+                $('._tab-button.--r').removeClass('-active');
+                if (!visual1[0].classList.contains('--visualOn')) {
+                    visual1.addClass('--visualOn');
+                }
+                if (!content1[0].classList.contains('--typeOn')) {
+                    content1.addClass('--typeOn');
+                }
+                visual2.removeClass('--visualOn');
+                content2.removeClass('--typeOn');
+            });
+            $('._tab-button.--r').on('click', (e) => {
+                if (!e.currentTarget.classList.contains('-active')) {
+                    e.currentTarget.classList.add('-active');
+                }
+
+                $('._tab-button.--l').removeClass('-active');
+                visual1.removeClass('--visualOn');
+                content1.removeClass('--typeOn');
+                if (!visual2[0].classList.contains('--visualOn')) {
+                    visual2.addClass('--visualOn');
+                }
+                if (!content2[0].classList.contains('--typeOn')) {
+                    content2.addClass('--typeOn');
+                }
+            });
         }
     }
 });

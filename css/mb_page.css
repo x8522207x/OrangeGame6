@@ -9,11 +9,11 @@
 
     .mobile-content {
         display: block;
+        position: relative;
     }
 
     .page--r-raid-forbiddenrock .mobile-content section.area {
         height: 1350px;
-        transform: none !important;
     }
 
     .page--r-raid-forbiddenrock .mobile-content section.section--intro {

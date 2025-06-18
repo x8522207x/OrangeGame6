@@ -27,7 +27,7 @@ $(document).ready(() => {
     });
 
     $('._video-button').on('click', () => {
-        openVideo('NhuCFuW1hb0');
+        openVideo('POTYvJrDwp4');
     });
 
     $('.btn_box button').on('click', function () {

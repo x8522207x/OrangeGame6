@@ -95,6 +95,16 @@ canvas {
     }
 }
 
+* {
+    box-sizing: border-box;
+}
+
+#plate--page {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
 .fullpage-section {
     box-sizing: border-box;
     max-height: var(--maxvh);

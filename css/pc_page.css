@@ -456,7 +456,7 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--raid .area__content .area__content__wrap ._title .subTitle {
-    font-size: 16px;
+    font-size: 18px;
     color: #95a4aa;
     font-family: "Noto Serif TC", serif;
     font-weight: 400;
@@ -476,8 +476,8 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 582px;
-    width: 1259px;
+    height: 588px;
+    width: 1265px;
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--reef .area__visual {
@@ -498,7 +498,7 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
     background-repeat: no-repeat;
     background-size: contain;
     height: 2000px;
-    left: -30%;
+    left: -50vw;
     position: absolute;
     top: -40%;
     transition: transform 1s ease-out;
@@ -535,7 +535,7 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header ._title .subTitle {
-    font-size: 16px;
+    font-size: 18px;
     color: #95a4aa;
     font-family: "Noto Serif TC", serif;
     font-weight: 400;
@@ -653,9 +653,7 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
 .page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn {
     color: #0000 !important;
     font-size: 0 !important;
-    height: 104px;
     position: absolute;
-    width: 100px;
     z-index: 1;
     -webkit-text-size-adjust: none;
 }
@@ -667,6 +665,8 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
+    height: 106px;
+    width: 137px;
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn2 {
@@ -676,6 +676,8 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
+    height: 107px;
+    width: 122px;
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn3 {
@@ -685,6 +687,8 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
+    height: 104px;
+    width: 99px;
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn4 {
@@ -694,6 +698,8 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
+    height: 104px;
+    width: 97px;
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn5 {
@@ -703,6 +709,8 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
+    height: 109px;
+    width: 123px;
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .modal_box .area_modal {
@@ -993,7 +1001,7 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._title .desc {
-    font-size: 16px;
+    font-size: 18px;
     color: #bbc8cd;
     font-family: "Noto Serif TC", serif;
     font-weight: 400;
@@ -1004,9 +1012,9 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 160px;
+    height: 166px;
     margin-top: 30px;
-    width: 622px;
+    width: 628px;
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--episode .area__visual {

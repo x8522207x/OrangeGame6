@@ -146,8 +146,8 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        height: 1132px;
-        width: 646px;
+        height: 1130px;
+        width: 648px;
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area {
@@ -250,8 +250,8 @@
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: contain;
-        height: 712px;
-        width: 342px;
+        height: 532.5px;
+        width: 254.25px;
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--reef .modal_box .area_modal.area_modal2 {
@@ -260,7 +260,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         height: 360px;
-        width: 342px;
+        width: 338px;
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--reef .modal_box .area_modal.area_modal3 {
@@ -268,8 +268,8 @@
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: contain;
-        height: 294px;
-        width: 343px;
+        height: 295px;
+        width: 338px;
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--reef .modal_box .area_modal.area_modal4 {
@@ -278,7 +278,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         height: 360px;
-        width: 343px;
+        width: 338px;
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--reef .modal_box .area_modal.area_modal5 {
@@ -286,8 +286,8 @@
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: contain;
-        height: 360px;
-        width: 343px;
+        height: 362px;
+        width: 338px;
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--reef .modal_box .area_modal .area_modal_close {
@@ -450,7 +450,28 @@
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--reef .area__visual2.--type1 {
-        background-image: url(../img/mo/sec3_bg1.jpg);
+        background-image: url(../img/mo/sec3_bg_1.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__visual2.--type2 {
+        background-image: url(../img/mo/sec3_bg_2.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__visual2.--type3 {
+        background-image: url(../img/mo/sec3_bg_3.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--reef .area__visual2.--type4 {
+        background-image: url(../img/mo/sec3_bg_4.jpg);
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -613,8 +634,8 @@
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._spec {
-        margin-bottom: 180px;
-        margin-top: 70px;
+        margin-bottom: 70px;
+        margin-top: 30px;
         align-items: center;
         column-gap: 360px;
         display: flex;
@@ -693,7 +714,7 @@
 
     .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._title .desc {
         width: 500px;
-        font-size: 18px;
+        font-size: 16px;
         color: #bbc8cd;
         font-family: "Noto Serif TC", serif;
         font-weight: 400;
@@ -706,6 +727,7 @@
         background-size: contain;
         height: 60px;
         width: 402px;
+        margin-top: 40px;
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._title sup {
@@ -741,16 +763,6 @@
         display: none;
     }
 
-    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._title sup {
-        width: 363px;
-        height: 60px;
-    }
-
-    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._detail .reword {
-        width: 314px;
-        height: 83px;
-    }
-
     .page--r-raid-forbiddenrock .mobile-content .section--intro .area__content ._title .date {
         font-size: 22px;
         color: #95a4aa;
@@ -764,22 +776,22 @@
         background-repeat: no-repeat;
         background-size: contain;
         display: block;
-        height: 39px;
+        height: 29.25px;
         position: relative;
-        width: 359px;
+        width: 269.25px;
         z-index: 1;
         margin-top: 10px;
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--raid .area__content .area__content__wrap ._title .subTitle {
-        font-size: 18px;
+        font-size: 16px;
         color: #95a4aa;
         font-family: "Noto Serif TC", serif;
         font-weight: 400;
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._header ._title .subTitle {
-        font-size: 18px;
+        font-size: 16px;
         color: #95a4aa;
         font-family: "Noto Serif TC", serif;
         font-weight: 400;
@@ -794,11 +806,11 @@
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--episode .area__content .area__content__wrap ._title .desc {
-        font-size: 17px;
+        font-size: 16px;
         color: #a6bbc3;
         font-family: "Noto Serif TC", serif;
         font-weight: 400;
-        width: 400px;
+        width: 100vw;
     }
 }
 
@@ -831,8 +843,8 @@
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--raid .area__content .area__content__wrap ._detail {
-        height: 566px;
-        width: 323px;
+        height: 565px;
+        width: 324px;
     }
 
     .page--r-raid-forbiddenrock .mobile-content section.section--reef {
@@ -872,6 +884,16 @@
         font-size: 17px;
     }
 
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._title sup {
+        width: 363px;
+        height: 60px;
+    }
+
+    .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._detail .reword {
+        width: 314px;
+        height: 83px;
+    }
+
     .page--r-raid-forbiddenrock .mobile-content .section--bertes .area__content .area__content__wrap ._spec {
         column-gap: 150px;
     }
@@ -905,40 +927,40 @@
         right: 1.9444444444vw;
         top: 10.833333vw;
         background-size: cover;
-        width: 68px;
-        height: 53px;
+        width: 102px;
+        height: 79.5px;
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn2 {
         left: 34.5vw;
         top: -35px;
         background-size: cover;
-        width: 61px;
-        height: 53px;
+        width: 91.5px;
+        height: 79.5px;
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn3 {
         left: 34.7222222222vw;
         top: 30.111111vw;
         background-size: cover;
-        width: 50px;
-        height: 52px;
+        width: 75px;
+        height: 78px;
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn4 {
         left: 1.1111111111vw;
         top: 6.666667vw;
         background-size: cover;
-        width: 48px;
-        height: 52px;
+        width: 72px;
+        height: 78px
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--1 ._area .btn_box .btn.btn5 {
         top: 40.111111vw;
         left: 22.2222222222vw;
         background-size: cover;
-        width: 61px;
-        height: 55px;
+        width: 91.5px;
+        height: 82.5px;
     }
 
     .page--r-raid-forbiddenrock .mobile-content .section--reef .area__content .area__content__wrap ._content ._display-item.type--2 .swiper_box .swiper_video .video_box {

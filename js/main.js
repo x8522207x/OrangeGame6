@@ -129,15 +129,13 @@ $(document).ready(() => {
 
                     $('.UNI-footer').css('display', 'none');
 
-                    $('._tab-button.--l').on('click', () => swiper.slideTo(2));
-                    $('._tab-button.--r').on('click', () => swiper.slideTo(3));
-
                     document.querySelectorAll('.swiper-slide-page').forEach(node => {
                         node.addEventListener('wheel', pcWheelHandler, { passive: true });
                         node.addEventListener('touchstart', pcTouchStart, { passive: true });
                     });
                 },
                 slideChange: (swiper) => {
+                    $('._tab-button.--l').trigger('click');
                     ['-active'].forEach(cl => ['.depth_1', '.depth_2'].forEach(ele => $(ele).removeClass(cl)));
                     $('.swiper-slide-page').off('scroll');
                     $('.swiper-slide-page').removeClass('scrollable');
@@ -151,14 +149,14 @@ $(document).ready(() => {
 
                     if ([0, 1].includes(swiper.realIndex)) {
                         $('.depth_1')[swiper.realIndex].classList.add('-active');
-                    } else if ([2, 3].includes(swiper.realIndex)) {
+                    } else if ([2].includes(swiper.realIndex)) {
                         $('.depth_1')[2].classList.add('-active');
                         $('.depth_2')[swiper.realIndex - 2].classList.add('-active');
                     } else {
-                        $('.depth_1')[swiper.realIndex - 1].classList.add('-active');
+                        $('.depth_1')[swiper.realIndex].classList.add('-active');
                     }
 
-                    if (swiper.realIndex === 5) {
+                    if (swiper.realIndex === 4) {
                         $('.UNI-footer').css('display', 'block');
                     }
                 },
@@ -169,9 +167,13 @@ $(document).ready(() => {
         pcSwiperPage.slideTo(0);
         $('.depth_1')[0].classList.add('-active');
 
-        for (let i = 0; i < 6; i++) {
+        for (let i = 0; i < 5; i++) {
             addPageClick(i, pcSwiperPage);
         }
+        $('.page_p3_1').on('click', () => {
+            pcSwiperPage.slideTo(2);
+            $('._tab-button.--r').trigger('click');
+        });
     };
 
     const p4Swiper = () => {
@@ -199,6 +201,12 @@ $(document).ready(() => {
                     const name = ['廢棄的收容所', '監視空地', '被侵蝕的埋葬地', '禁忌的實驗室'];
                     const videoUrl = ['sec3_bg_1.mp4', 'sec3_bg_2.mp4', 'sec3_bg_3.mp4', 'sec3_bg_4.mp4'];
                     const index = swiper.realIndex;
+                    if ($(window).width() > 1280) {
+                        $('.section--reef .area__visual video')[0].src = `./img/pc/${videoUrl[index]}`;
+                    } else {
+                        $('.page--r-raid-forbiddenrock .mobile-content .section--reef .area__visual2').removeClass('--type1').removeClass('--type2').removeClass('--type3').removeClass('--type4');
+                        $('.page--r-raid-forbiddenrock .mobile-content .section--reef .area__visual2').addClass(`--type${index + 1}`)
+                    }
                     $('.swiper_video ._name span')[0].innerText = name[index];
                     $('.video_box video')[0].src = `./img/pc/${videoUrl[index]}`;
                     $('.swiper_video ._name span')[1].innerText = name[index];
@@ -212,6 +220,48 @@ $(document).ready(() => {
         $('.event_gnb').addClass('type_clear');
         $('.event_gnb').removeClass('type_default');
         pcSwiper();
+        const visual = $('.page--r-raid-forbiddenrock .pc-content .section--reef .area__visual');
+        const content1 = $('.page--r-raid-forbiddenrock .pc-content .section--reef ._content .type--1');
+        const content2 = $('.page--r-raid-forbiddenrock .pc-content .section--reef ._content .type--2');
+        $('._tab-button.--l').on('click', (e) => {
+            if (!$('.depth_2')[0].classList.contains('-active')) {
+                $('.depth_2')[0].classList.add('-active');
+                $('.depth_2')[1].classList.remove('-active');
+            }
+
+            if (!e.currentTarget.classList.contains('-active')) {
+                e.currentTarget.classList.add('-active');
+            }
+
+            $('._tab-button.--r').removeClass('-active');
+            if (!visual[0].classList.contains('--visualOn')) {
+                visual[0].classList.add('--visualOn');
+            }
+            if (!content1[0].classList.contains('--typeOn')) {
+                content1.addClass('--typeOn');
+            }
+            visual[1].classList.remove('--visualOn');
+            content2.removeClass('--typeOn');
+        });
+        $('._tab-button.--r').on('click', (e) => {
+            if (!$('.depth_2')[1].classList.contains('-active')) {
+                $('.depth_2')[1].classList.add('-active');
+                $('.depth_2')[0].classList.remove('-active');
+            }
+            if (!e.currentTarget.classList.contains('-active')) {
+                e.currentTarget.classList.add('-active');
+            }
+
+            $('._tab-button.--l').removeClass('-active');
+            visual[0].classList.remove('--visualOn');
+            content1.removeClass('--typeOn');
+            if (!visual[1].classList.contains('--visualOn')) {
+                visual[1].classList.add('--visualOn');
+            }
+            if (!content2[0].classList.contains('--typeOn')) {
+                content2.addClass('--typeOn');
+            }
+        });
     } else {
         if ($(window).width() > 768) {
             $('.event_gnb').addClass('type_clear');

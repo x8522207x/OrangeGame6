@@ -341,7 +341,7 @@
                     <div class="area__content">
                       <div class="area__content__wrap layout-escape">
                         <div class="_title">
-                          <div class="date">2025.07.09 UPDATE</div>
+                          <div class="date"></div>
                           <div class="subTitle"></div>
                           <sup></sup>
                         </div>
@@ -466,7 +466,7 @@
                           <div class="subTitle">
                             完成所有「首領團戰」後可挑戰的高階內容。
                             <br />
-                            請與最多5名同伴組隊，並通過禁忌的暗礁來獲得特別獎勵。
+                            請與最多5名同伴組隊，通過後以獲得特別獎勵。
                           </div>
                         </div>
                         <div class="_detail"></div>
@@ -482,7 +482,7 @@
                     <div class="area__visual --visualOn">
                       <div
                         class="cloud"
-                        style="transform: translate(0px, 0px)"
+                        style="transform: translate(0px, -370px)"
                       ></div>
                     </div>
                     <div class="area__visual">
@@ -501,11 +501,13 @@
                           <div class="_title">
                             <sup></sup>
                             <div class="subTitle">
-                              妖精為獲得深淵力量，而展開實驗的克隆北海孤島。
+                              妖精為獲得深淵力量，在克隆北海孤島展開實驗。
                               <br />
-                              AN850年，古代妖精戰爭爆發後，研究所和實驗體都被孤立並遺忘。
+                              AN850年古代妖精戰爭後，研究所和實驗體被孤立遺忘。
                               <br />
-                              千年後作為「禁忌的暗礁」再次被人熟知，並孕育出比死亡更殘酷的生命。
+                              千年後，島嶼以「禁忌的暗礁」之名重現，
+                              <br />
+                              孕育出比死亡更殘酷的生命。
                             </div>
                           </div>
                           <div class="_tab">
@@ -528,7 +530,7 @@
                                 <button type="button" class="btn btn5"></button>
                               </div>
                               <div class="modal_box">
-                                <div class="area_modal area_modal1">
+                                <div class="area_modal area_modal1 --on">
                                   <button
                                     type="button"
                                     class="area_modal_close"
@@ -687,11 +689,11 @@
                             <br />
                             希亞爾便在「交界」附近的深淵蠶繭中誕生。
                             <br /><br />
-                            他在禁忌的暗礁吸收因實驗犧牲的地蜘蛛，並羽化為蝶。
+                            他在禁忌的暗礁吸收因實驗犧牲的地蜘蛛，羽化為蝶。
                             <br /><br />
-                            以犧牲者記憶為原型，他本能地模仿並一直將自己當作人類。
+                            以犧牲者記憶為原型，他本能地模仿並自認為人類，
                             <br />
-                            但從漫長的沉睡甦醒後，卻迎來人類為了清除自己而發動的攻擊。
+                            但從沉睡中甦醒後迎來的，卻是人類對他發動的攻擊。
                           </div>
                         </div>
                         <div class="_detail">
@@ -713,13 +715,15 @@
                           <div class="subTitle">新劇情</div>
                           <sup></sup>
                           <div class="desc">
-                            探勘中發現了未知島嶼，禁忌的暗礁。
+                            蕾姿克正在研究從「禁忌的暗礁」帶回的深淵蠶繭。
+                            <br /><br />
+                            研究停滯時，一名可疑老人現身，
                             <br />
-                            蕾姿克正在研究從那裡帶回的深淵蠶繭。
+                            稱擁有亞奎力量的守護者能喚醒蠶繭。
                             <br /><br />
-                            研究遲遲無進展時，一名「可疑的老人」現身，稱若是具有亞奎力量的守護者，能喚醒蠶繭。
-                            <br /><br />
-                            深淵蠶繭對亞奎力量產生反應，逐漸染上黑暗，不久後，那不能甦醒的邪惡，在被遺忘的島嶼上醒來...
+                            蠶繭因亞奎力量產生反應，逐漸染上黑暗。
+                            <br />
+                            而原本沉眠的邪惡，在被遺忘的島嶼上醒來...
                           </div>
                         </div>
                       </div>
@@ -744,9 +748,51 @@
               <div class="area__content">
                 <div class="area__content__wrap layout-escape">
                   <div class="_title">
-                    <div class="date">2025.07.09 UPDATE</div>
+                    <div class="date"></div>
                     <div class="subTitle"></div>
                     <sup></sup>
+                  </div>
+                  <div class="_title-effect">
+                    <svg viewBox="0 1 110 150" width="100%" height="100%">
+                      <filter
+                        id="noise"
+                        width="100%"
+                        height="100%"
+                        x="0%"
+                        y="0%"
+                      >
+                        <feTurbulence
+                          type="turbulence"
+                          baseFrequency="0.0547184"
+                          numOctaves="1"
+                          result="turbulence"
+                          seed="4"
+                        >
+                          <animate
+                            attributeName="baseFrequency"
+                            values="0.1;0;"
+                            from="0"
+                            to="100"
+                            dur="20s"
+                            repeatCount="indefinite"
+                          ></animate>
+                        </feTurbulence>
+                        <feDisplacementMap
+                          in="SourceGraphic"
+                          in2="turbulence"
+                          scale="5"
+                          xChannelSelector="R"
+                        ></feDisplacementMap>
+                      </filter>
+                      <image
+                        x="12"
+                        y="88"
+                        width="84"
+                        height="46"
+                        xlink:href="./img/mo/mb_title-inverted.png"
+                        style="filter: url(#noise); will-change: filter"
+                      ></image>
+                    </svg>
                   </div>
                   <button class="_video-button"></button>
                 </div>
@@ -761,7 +807,7 @@
                     <div class="subTitle">
                       完成所有「首領團戰」後可挑戰的高階內容。
                       <br />
-                      請與最多5名同伴組隊，並通過禁忌的暗礁來獲得特別獎勵。
+                      請與最多5名同伴組隊，通過後以獲得特別獎勵。
                     </div>
                   </div>
                   <div class="_detail"></div>
@@ -795,11 +841,13 @@
                     <div class="_title">
                       <sup></sup>
                       <div class="subTitle">
-                        妖精為獲得深淵力量，而展開實驗的克隆北海孤島。
+                        妖精為獲得深淵力量，在克隆北海孤島展開實驗。
                         <br />
-                        AN850年，古代妖精戰爭爆發後，研究所和實驗體都被孤立並遺忘。
+                        AN850年古代妖精戰爭後，研究所和實驗體被孤立遺忘。
                         <br />
-                        千年後作為「禁忌的暗礁」再次被人熟知，並孕育出比死亡更殘酷的生命。
+                        千年後，島嶼以「禁忌的暗礁」之名重現，
+                        <br />
+                        孕育出比死亡更殘酷的生命。
                       </div>
                     </div>
                     <div class="_tab">
@@ -912,11 +960,11 @@
                       <br />
                       希亞爾便在「交界」附近的深淵蠶繭中誕生。
                       <br /><br />
-                      他在禁忌的暗礁吸收因實驗犧牲的地蜘蛛，並羽化為蝶。
+                      他在禁忌的暗礁吸收因實驗犧牲的地蜘蛛，羽化為蝶。
                       <br /><br />
-                      以犧牲者記憶為原型，他本能地模仿並一直將自己當作人類。
+                      以犧牲者記憶為原型，他本能地模仿並自認為人類，
                       <br />
-                      但從漫長的沉睡甦醒後，卻迎來人類為了清除自己而發動的攻擊。
+                      但從沉睡中甦醒後迎來的，卻是人類對他發動的攻擊。
                     </div>
                   </div>
                   <div class="_detail">
@@ -933,13 +981,15 @@
                     <div class="subTitle">新劇情</div>
                     <sup></sup>
                     <div class="desc">
-                      探勘中發現了未知島嶼，禁忌的暗礁。
+                      蕾姿克正在研究從「禁忌的暗礁」帶回的深淵蠶繭。
+                      <br /><br />
+                      研究停滯時，一名可疑老人現身，
                       <br />
-                      蕾姿克正在研究從那裡帶回的深淵蠶繭。
+                      稱擁有亞奎力量的守護者能喚醒蠶繭。
                       <br /><br />
-                      研究遲遲無進展時，一名「可疑的老人」現身，稱若是具有亞奎力量的守護者，能喚醒蠶繭。
-                      <br /><br />
-                      深淵蠶繭對亞奎力量產生反應，逐漸染上黑暗，不久後，那不能甦醒的邪惡，在被遺忘的島嶼上醒來...
+                      蠶繭因亞奎力量產生反應，逐漸染上黑暗。
+                      <br />
+                      而原本沉眠的邪惡，在被遺忘的島嶼上醒來...
                     </div>
                   </div>
                 </div>

@@ -336,10 +336,14 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--intro .area__content ._title .date {
-    font-size: 22px;
-    color: #95a4aa;
-    font-family: "Noto Serif TC", serif;
-    font-weight: 400;
+    background-image: url(../img/pc/p1-update.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 26px;
+    position: relative;
+    width: 304px;
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--intro .area__content ._title .subTitle {
@@ -476,8 +480,8 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 588px;
-    width: 1265px;
+    height: 590px;
+    width: 1261px;
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--reef .area__visual {
@@ -496,10 +500,7 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
     background-image: url(../img/pc/sec3_cloud_bg.png);
     background-position: 50%;
     background-repeat: no-repeat;
-    background-size: contain;
     height: 2000px;
-    left: -50vw;
-    position: absolute;
     top: -40%;
     transition: transform 1s ease-out;
     width: 3000px;

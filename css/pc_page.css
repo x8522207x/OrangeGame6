@@ -535,6 +535,15 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
     -webkit-text-size-adjust: none;
 }
 
+.page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header ._title .topTitle {
+    background-image: url(../img/pc/p3-top-title.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 63px;
+    width: 200px;
+}
+
 .page--r-raid-forbiddenrock .pc-content .section--reef .area__content .area__content__wrap ._header ._title .subTitle {
     font-size: 18px;
     color: #95a4aa;
@@ -888,6 +897,15 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap .topTitle {
+    background-image: url(../img/pc/p4-top-title.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 63px;
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._spec {

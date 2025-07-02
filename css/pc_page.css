@@ -906,6 +906,7 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
     background-size: cover;
     width: 200px;
     height: 63px;
+    margin-top: 120px;
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._spec {
@@ -913,7 +914,7 @@ body.use-mouse .nav-side ._wrap ol li button:hover {
     column-gap: 360px;
     display: flex;
     justify-content: center;
-    margin-top: 180px;
+    margin-top: 60px;
 }
 
 .page--r-raid-forbiddenrock .pc-content .section--bertes .area__content .area__content__wrap ._spec .group {
